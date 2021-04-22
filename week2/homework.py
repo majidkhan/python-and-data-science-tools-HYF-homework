@@ -25,3 +25,9 @@ fizz_buzz()
 
 print('\n ## Task 2 ## \n')
 # Consider a lst= [5, 10, 20] and write a try and except block to avoid IndexError.
+try:
+    a_list = [5, 10, 20]
+    user_input_index = int(input(f"Enter index number: "))
+    print(f"Index of a_list[{user_input_index}] is {a_list[user_input_index]}")
+except IndexError:
+    print(f"index a_list[{user_input_index}] does not exist")
