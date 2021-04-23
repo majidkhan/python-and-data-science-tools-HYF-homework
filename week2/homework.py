@@ -92,3 +92,23 @@ def show_numbers(limit):
 
 
 show_numbers(11)
+
+print('\n ## Task 8 ## \n')
+# Create a class named Person, with firstname and lastname properties, and a print name method.
+
+
+class Person:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def print_name(self):
+        name = self.first_name + " " + self.last_name
+        print(f"Name is {name}")
+
+
+john = Person('John', 'Travolta')
+john.print_name()
+
+somebody = Person('Michael', 'Hessle')
+somebody.print_name()
