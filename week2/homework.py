@@ -112,3 +112,14 @@ john.print_name()
 
 somebody = Person('Michael', 'Hessle')
 somebody.print_name()
+
+print('\n ## Task 9 ## \n')
+# Write a program asks for numeric user input. Instead the user types characters in the input box. The program normally would crash. But write try-except block so it can be handled properly.
+
+while True:
+    try:
+        user_input = int(input("Please enter an integer value: "))
+        break
+    except ValueError:
+        print("Not a valid integer! Please tra again")
+print("You have entered an integer value, Good Job!")
