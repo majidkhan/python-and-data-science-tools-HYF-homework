@@ -123,3 +123,33 @@ while True:
     except ValueError:
         print("Not a valid integer! Please tra again")
 print("You have entered an integer value, Good Job!")
+
+print('\n ## Task 10 ## \n')
+# Write a Python program to create two empty classes, Student and Marks. Now create some instances and check whether they are instances of the said class
+
+
+class Student:
+    pass
+
+
+class Marks:
+    pass
+
+
+martin = Student()
+print(martin)
+
+stud1_marks = Marks()
+print(stud1_marks)
+
+print(f"martin instance of class Student: {isinstance(martin, Student)}")
+print(f"martin instance of class Marks: {isinstance(martin, Marks)}")
+print(
+    f"stud1_marks instance of class Student: {isinstance(stud1_marks, Student)}")
+print(
+    f"stud1_marks instance of class Marks: {isinstance(stud1_marks, Marks)}")
+
+print(
+    f"Student subclass of built in object class: {issubclass(Student, object)}")
+print(
+    f"Marks subclass of built in object class: {issubclass(Marks, object)}")
