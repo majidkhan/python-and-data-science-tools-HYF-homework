@@ -31,3 +31,24 @@ try:
     print(f"Index of a_list[{user_input_index}] is {a_list[user_input_index]}")
 except IndexError:
     print(f"index a_list[{user_input_index}] does not exist")
+
+print('\n ## Task 2 ## \n')
+# Create a class of Jet inventory with two arguments i.e name and country. Also add the minimum 2 items in the class and print them.
+
+# https://google.github.io/styleguide/pyguide.html#316-naming
+
+
+class JetInventory:  # CamelCase is supported as naming convention for Python classes
+    def __init__(self, name, country):
+        self.name = name
+        self.country = country
+
+    def print_jet(self):
+        print(f"Jet name is {self.name} and made is {self.country}")
+
+
+fighterJet = JetInventory('F16', 'USA')
+print(fighterJet.name, fighterJet.country)
+
+simpleJet = JetInventory('Boeing', 'USA')
+simpleJet.print_jet()
