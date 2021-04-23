@@ -78,3 +78,17 @@ is_key_exist(jet_dict, key)
 
 key = 'make'
 is_key_exist(jet_dict, key)
+
+# Additional Exercises:
+
+print('\n ## Task 6 ## \n')
+# Write a function called showNumbers that takes a parameter called limit. It should print all the numbers between 0 and limit with a label to identify the even and odd numbers.
+
+
+def show_numbers(limit):
+    for i in range(limit):
+        msg = "EVEN" if i % 2 == 0 else "ODD"
+        print(i, msg)
+
+
+show_numbers(11)
