@@ -32,7 +32,7 @@ try:
 except IndexError:
     print(f"index a_list[{user_input_index}] does not exist")
 
-print('\n ## Task 2 ## \n')
+print('\n ## Task 3 ## \n')
 # Create a class of Jet inventory with two arguments i.e name and country. Also add the minimum 2 items in the class and print them.
 
 # https://google.github.io/styleguide/pyguide.html#316-naming
@@ -52,3 +52,29 @@ print(fighterJet.name, fighterJet.country)
 
 simpleJet = JetInventory('Boeing', 'USA')
 simpleJet.print_jet()
+
+print('\n ## Task 4 ## \n')
+# Create notebook, import libraries and read the dataset.
+
+print('\n ## Task 5 ## \n')
+# Write a Python script to check whether a given key already exists in a dictionary.
+
+jet_dict = {'name': 'F-35', 'country': 'USA', 'date': 2006}
+
+
+def is_key_exist(jet_dict, key):
+
+    if key in jet_dict.keys():
+        #        print("Present, ", end=" ")
+        print(f"Key '{key}' is Present, value = {jet_dict[key]}")
+#        print("value =", jet_dict[key])
+    else:
+        #        print("Not present")
+        print(f"Key '{key}' not present")
+
+
+key = 'name'
+is_key_exist(jet_dict, key)
+
+key = 'make'
+is_key_exist(jet_dict, key)
