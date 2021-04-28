@@ -64,7 +64,7 @@ jet_dict = {'name': 'F-35', 'country': 'USA', 'date': 2006}
 
 def is_key_exist(jet_dict, key):
 
-    if key in jet_dict.keys():
+    if key in jet_dict:
         #        print("Present, ", end=" ")
         print(f"Key '{key}' is Present, value = {jet_dict[key]}")
 #        print("value =", jet_dict[key])
